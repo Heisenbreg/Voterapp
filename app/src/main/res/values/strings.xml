@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Voterapp</string>
+
+    <string-array name="names">
+        <item>Person1</item>
+        <item>Person2</item>
+        <item>Person3</item>
+    </string-array>
+</resources>
