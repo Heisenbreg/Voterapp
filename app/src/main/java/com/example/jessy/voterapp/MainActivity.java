@@ -5,10 +5,14 @@ import android.os.Bundle;
 //import android.view.View;
 import android.widget.ArrayAdapter;
 //import android.widget.Button;
+import android.widget.ListView;
 import android.widget.Spinner;
 //import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    ListView simpleList;
+    String countryList[] = {"India", "China", "australia", "Portugle", "America", "NewZealand"};
 
 
     @Override
@@ -16,7 +20,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        simpleList = (ListView) simpleList.findViewById(R.id.lv_vote);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.activity_listview, R.id.textView, countryList);
+        simpleList.setAdapter(arrayAdapter);
     }
 
 
